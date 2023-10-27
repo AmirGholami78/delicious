@@ -1,0 +1,64 @@
+.footer {
+    grid-column: 1 /-1;
+    padding: 0;
+    margin-top: 50px;
+    border-top: 1px solid black;    
+ }
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(1 , 100px);
+    text-align: center;
+    padding: 45px;
+}
+.footer-title {
+    font-size: 1.5rem;
+    color: rgb(255, 136, 0);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-sub-title {
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+}
+.footer-sub-title:active ,
+.footer-sub-title:hover {
+    color : orange;
+}
+
+.telegram:hover,
+.telegram:active {
+    color:rgb(0, 81, 255)
+}
+.whatsapp:hover,
+.whatsapp:active {
+    color:rgb(0, 241, 0)
+}
+.youtube:hover,
+.youtube:active {
+    color:red
+}
+
+.copy-right {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:425px) {
+    .footer-section {
+        display: grid;
+        grid-template-rows: repeat(3 , auto);
+        grid-template-columns: 1fr;
+    }
+    .footer-title {
+        margin-top: 25px;
+    }
+}

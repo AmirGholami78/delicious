@@ -1,0 +1,44 @@
+.header {
+    background-image: url(../pics/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+   
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(3 , min-content);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.header-text-1 {
+    color: white;
+    font-size: 30px;
+    justify-self: center;
+}
+.header-text-2 {
+    color: white;
+    font-size: 50px;
+}
+.header-text-3 {
+    color: orange;
+}
+.header-btn {
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    border: 1px solid orange;
+    transition: all 0.2s;
+    justify-self: center;
+    cursor: pointer;
+
+}
+
+.header-btn:hover {
+    color: orange;
+    background-color: white;
+
+}

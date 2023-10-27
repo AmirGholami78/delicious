@@ -1,0 +1,106 @@
+.reserve{
+    grid-column: 1 / -1;
+    
+}
+
+
+.order-content {
+    background: url(../pics/background-blurry-restaurant-shop-interior.jpg);
+    height:350px;
+    display: grid;
+    grid-template-columns: 30px repeat(4 , 1fr) 30px;
+    grid-template-rows: repeat(1 , 1fr);
+    padding: 2rem;
+
+    
+}
+.order-text1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+.subtext1 {
+    font-family: system-ui;
+    margin-bottom: 50px;
+}
+.subtext2 {
+    font-family: 'Dancing Script';
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+.subtext3 {
+    font-family: system-ui;
+    font-weight: 700;
+    font-size: 12.5px;
+    margin-bottom: 50px;
+}
+.subtext4 {
+    font-family: 'Dancing Script';
+}
+
+div span {
+    color: goldenrod;
+}
+.order-text2 {
+    
+    grid-column: 3/6;
+    background-color: rgba(255, 255, 255, 0.61);
+    text-align: center;
+}
+
+.tel {
+    font-size: 1rem;
+    font-family: 'Dancing Script';
+    color: goldenrod;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.tel-content {
+    font-family: system-ui;
+    transition: all 0.4s ease;
+}
+.email {
+    font-size: 1rem;
+    font-family: 'Dancing Script';
+    color: goldenrod;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.email-content {
+    font-family: system-ui;
+    transition: all 0.4s ease;
+
+}
+.tel-content:hover ,
+ .email-content:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+ }
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.profile-item {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:375px) {
+    .reserve {
+        font-size: 10px;
+    }
+   
+    
+}
+@media screen and (max-width:700px) {
+    .profile-item {
+        width: 60px;
+        height: 60px;
+        margin-top: 1.5rem;
+        border-radius: 50%;
+    }
+    
+}
